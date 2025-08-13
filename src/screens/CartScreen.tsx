@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unstable-nested-components */
+
 
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Image } from 'react-native';
