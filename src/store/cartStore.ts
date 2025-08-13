@@ -1,4 +1,3 @@
-// src/store/cartStore.ts
 import { create } from 'zustand';
 import Pizza from '../model/pizza';
 
