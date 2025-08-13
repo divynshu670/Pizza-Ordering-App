@@ -1,4 +1,3 @@
-// src/screens/PaymentScreen.tsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import { useStripe } from '@stripe/stripe-react-native';
