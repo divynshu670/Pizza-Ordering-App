@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, Text, ActivityIndicator, Alert, StyleSheet } from 'react-native';
 import { useAuthStore } from '../store/authStore';
+import { RootStackParamList } from '../navigation/types';
 
 
-// Define navigation types locally
-type RootStackParamList = {
-  Login: undefined;
-  Signup: undefined;
-  Home: undefined;
-};
+
 
 type SignupScreenProps = {
   navigation: {
