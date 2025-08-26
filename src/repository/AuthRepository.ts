@@ -1,19 +1,10 @@
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
+import { Resource } from '../core/resource';
+import { User } from '../model/user';
 
-// Define and export the User interface
-export interface User {
-  uid: string;
-  name: string;
-  email: string;
-  address: string;
-}
 
-// Define and export the Resource type
-export type Resource<T> = 
-  | { type: 'success'; data: T }
-  | { type: 'error'; message: string }
-  | { type: 'loading' };
+
 
 class AuthRepository {
   private usersCollection = firestore().collection('users');

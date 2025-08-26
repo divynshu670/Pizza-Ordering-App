@@ -1,11 +1,8 @@
 import firestore from '@react-native-firebase/firestore';
 import Pizza from '../models/Pizza';
+import { Resource } from '../core/resource';
 
-// Define resource type for API responses
-export type Resource<T> = 
-  | { type: 'success'; data: T }
-  | { type: 'error'; message: string }
-  | { type: 'loading' };
+
 
 class PizzaRepository {
   private pizzasCollection = firestore().collection('pizzas');
