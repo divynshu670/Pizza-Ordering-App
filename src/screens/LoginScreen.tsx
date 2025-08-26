@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, Text, ActivityIndicator, Alert, StyleSheet } from 'react-native';
 import { useAuthStore } from '../store/authStore';
+import { RootStackParamList } from '../navigation/types';
+
 
 
 type LoginScreenProps = {
